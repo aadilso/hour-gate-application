@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ShowReportActivity"
+    android:background="@color/primary_back_colour">
+
+    <ImageButton
+        android:id="@+id/Btn_back_ShowReports"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/primary_back_colour"
+        android:src="@drawable/ic_icon_ionic_md_arrow_back" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Btn_back_ShowReports"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/poppins"
+        android:text="Report for January"
+        android:textAlignment="center"
+        android:textSize="@dimen/_16sdp" />
+
+    <LinearLayout
+        android:id="@+id/reportHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:weightSum="9"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="Name"
+            android:textSize="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:layout_weight="3"
+            android:background="@color/green"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="Hours Worked"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="Total Wages"
+            android:textSize="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:fontFamily="@font/poppins"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_below="@+id/reportHeading"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_above="@+id/downloadReport"/>
+
+    <Button
+        android:id="@+id/downloadReport"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/password_background"
+        android:backgroundTint="@color/red"
+        android:drawableStart="@drawable/ic_icon_material_file_download"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+</RelativeLayout>

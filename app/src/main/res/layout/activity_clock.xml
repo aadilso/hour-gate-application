@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ClockActivity"
+    android:background="@color/primary_back_colour">
+
+    <ImageButton
+        android:id="@+id/Btn_back_Clock"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/primary_back_colour"
+        android:src="@drawable/ic_icon_ionic_md_arrow_back" />
+
+    <ImageView
+        android:id="@+id/Clock_Text"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/Rltv_sites"
+        android:layout_below="@id/Clock_Text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:background="@drawable/password_background" >
+
+        <Spinner
+            android:id="@+id/sitesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rltv_sites"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/Btn_CheckIn_Clock"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/password_background"
+            android:backgroundTint="@color/green"
+            android:text="Check In"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_20sdp"/>
+
+        <Button
+            android:id="@+id/Btn_CheckOut_Clock"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/password_background"
+            android:backgroundTint="@color/green"
+            android:text="Check Out"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_20sdp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Employees"
+    android:background="@color/primary_back_colour">
+
+    <ImageButton
+        android:id="@+id/Btn_Add_Employee"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/add_button_background"
+        android:paddingTop="@dimen/_5sdp"
+        android:src="@drawable/ic_icon_ionic_ios_add" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/Btn_Add_Employee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/password_background"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Employees"
+        android:searchIcon="@drawable/ic_icon_feather_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/Recyclerview_employees"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_below="@id/searchView" />
+</RelativeLayout>

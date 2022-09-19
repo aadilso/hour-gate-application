@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    app:cardElevation="@dimen/_minus10sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    >
+
+    <TextView
+        android:id="@+id/Tv_Employee_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_13sdp"
+        android:text="Dummy Employee Name"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_13sdp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginStart="@dimen/_10sdp"/>
+
+    <Button
+        android:id="@+id/Employees_Delete_Button"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"
+        android:layout_gravity="center_vertical|right"
+        android:background="@drawable/delete_button_background"
+        android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+</androidx.cardview.widget.CardView>

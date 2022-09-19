@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">hourgate</string>
+    <string name="search_places">Search Places on Google Maps</string>
+    <string name="pick_location">Pick Location</string>
+
+    <style name="EmployeeAddingDialog">
+        <item name="android:windowBackground">
+            @drawable/empty_back
+        </item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowMinWidthMajor">80%</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

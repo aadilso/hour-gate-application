@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserDataAdmin"
+    android:background="@drawable/userdata_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/app_logo_colorful"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Name_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_below="@id/app_logo_colorful"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:textColorHint="@color/black"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/black">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Name_AdminData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/password_background"
+                android:drawablePadding="@dimen/_10sdp"
+                android:enabled="false"
+                android:padding="@dimen/_15sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Email_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_below="@id/Name_Input"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/black">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Email_AdminData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/password_background"
+                android:drawablePadding="@dimen/_10sdp"
+                android:enabled="false"
+                android:padding="@dimen/_15sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Password_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_below="@id/Email_Input"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColorHint="@color/black"
+            app:passwordToggleEnabled="true"
+            app:hintAnimationEnabled="false"
+            app:passwordToggleTint="@color/green"
+            app:hintTextColor="@color/black">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Password_AdminData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/password_background"
+                android:drawablePadding="@dimen/_10sdp"
+                android:enabled="false"
+                android:inputType="textPassword"
+                android:padding="@dimen/_15sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Reports"
+    android:background="@color/primary_back_colour">
+
+    <ImageView
+        android:id="@+id/Report_Text"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/Rltv_employee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/Report_Text"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/password_background"
+        android:paddingHorizontal="@dimen/_10sdp">
+
+        <Spinner
+            android:id="@+id/employeeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/Rltv_employee"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/password_background"
+        android:paddingHorizontal="@dimen/_10sdp">
+
+        <Spinner
+            android:id="@+id/timePeriodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Btn_Create_Reports"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_150sdp"
+        android:background="@drawable/login_button_background"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/_10sdp"
+        android:text="Create Report"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+</RelativeLayout>
