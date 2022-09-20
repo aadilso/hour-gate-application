@@ -31,7 +31,7 @@ To run the project locally:  <br />
 
  * Please note that the google-services.json file is not included in this repo hence you will need to create your own Cloud Firestore Database and connect it to your own Android Studio project to use any application features which require the database (which is essentially most of the features): https://firebase.google.com/docs/firestore/quickstart#java <br />
  
- * Also note that to use any features that require location you will need to create your own Google Maps API keys and add them to your pwn Android Studio project: https://developers.google.com/maps/documentation/android-sdk/get-api-key
+ * Also note that to use any features that require location you will need to create your own Google Maps API keys and add them to your own Android Studio project: https://developers.google.com/maps/documentation/android-sdk/get-api-key
  
  
 
